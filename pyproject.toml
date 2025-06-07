@@ -1,0 +1,19 @@
+[project]
+name = "pytracker"
+version = "0.0.1"
+authors = [
+  { name="Devin Seay", email="das5pzq@virginia.edu" },
+]
+description = "A Python package for quick and easy use of common functions and operations used in QTracker."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/das5pzq/pytracker"
+Issues = "https://github.com/das5pzq/pytracker/issues"

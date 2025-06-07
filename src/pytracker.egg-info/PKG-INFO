@@ -1,0 +1,17 @@
+Metadata-Version: 2.4
+Name: pytracker
+Version: 0.0.1
+Summary: A Python package for quick and easy use of common functions and operations used in QTracker.
+Author-email: Devin Seay <das5pzq@virginia.edu>
+License-Expression: MIT
+Project-URL: Homepage, https://github.com/das5pzq/pytracker
+Project-URL: Issues, https://github.com/das5pzq/pytracker/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.9
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
+# PyTracker #
+
