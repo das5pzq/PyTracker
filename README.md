@@ -4,7 +4,7 @@ PyTracker is a Python package designed to streamline and simplify the process of
 
 ## Overview
 
-PyTracker provides a modular and organized approach to handling various tasks commonly encountered in particle physics data analysis. By compartmentalizing different functionalities, it offers a clean and efficient way to work with ROOT files and related operations.
+PyTracker provides a modular and organized approach to handling various tasks commonly encountered in particle physics data analysis. By compartmentalizing different functionalities, it offers a clean and efficient way to work with ROOT files in the RUS universal file format and related operations.
 
 ## Features
 
@@ -25,23 +25,15 @@ pip install pytracker
 PyTracker is designed to be intuitive and straightforward to use. Here's a basic example:
 
 ```python
-from pytracker import root_utils
-from pytracker import analysis
+from pytracker import ReadROOT
+from pytracker import QVision
 
-# Your code here
+# Your code here ...
 ```
 
 ## Documentation
 
-For detailed documentation and examples, please refer to the [documentation](docs/).
-
-## Contributing
-
-We welcome contributions to PyTracker! If you'd like to contribute, please:
-
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request
+For detailed documentation and examples, please refer to the [documentation](docs/). (add documentation later)
 
 ## License
 

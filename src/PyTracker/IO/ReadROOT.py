@@ -5,7 +5,7 @@ from PyTracker.QVision.plot import HitMatrix
 
 ### In this version of ReadROOT, we will only be using UpRoot and PyROOT to read in ROOT files and perform basic operations.
 
-class TreeWrapper:
+class Tree:
     def __init__(self, tree: uproot.behaviors.TTree.TTree):
         self.tree = tree
     
@@ -34,7 +34,7 @@ class TreeWrapper:
             event_number (int): The event number to visualize
             
         Returns:
-            HitMatrix: A HitMatrix object that can be used to plot the hit pattern
+            HitMatrix: A matplotlib figure object containing the hit matrix (future, also returns the hit matrix data)
         """
         return HitMatrix(self, event_number)
 
@@ -53,7 +53,7 @@ class ReadROOT:
         except Exception as e:
             raise FileNotFoundError(f"Could not open ROOT file: {file_path}. Error: {str(e)}")
     
-    def get_tree(self, tree_name: str) -> TreeWrapper:
+    def get_tree(self, tree_name: str) -> Tree:
         """
         Get a specific tree from the ROOT file.
         
@@ -67,7 +67,7 @@ class ReadROOT:
             KeyError: If the tree name doesn't exist in the file
         """
         try:
-            return TreeWrapper(self.file[tree_name])
+            return Tree(self.file[tree_name])
         except KeyError:
             raise KeyError(f"Tree '{tree_name}' not found in file: {self.file_path}")
     

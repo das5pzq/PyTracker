@@ -9,5 +9,5 @@ tree = reader.get_tree("tree")
 
 tree.branch_info()
 
-tree.HitMatrix(10)
+tree.HitMatrix(10) ### HitMatrix(event_number, show_plot=True)
 

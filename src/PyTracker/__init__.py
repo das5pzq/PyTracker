@@ -1,3 +1,3 @@
-from .IO.ReadROOT import ReadROOT, TreeWrapper
-
-__all__ = ["ReadROOT", "TreeWrapper"]
+from .IO.ReadROOT import ReadROOT, Tree
+from .QVision.plot import HitMatrix
+__all__ = ["ReadROOT", "Tree", "HitMatrix"]
